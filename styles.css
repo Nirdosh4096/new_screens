@@ -1398,7 +1398,6 @@ header .nav-bar .logout span {
 
     header .nav-bar {
         padding: 1.5rem 3.625rem 1.375rem 3.625rem;
-        background: rgba(132, 156, 66, 0.2);
         display: flex;
         justify-content: space-between;
         align-items: center;
