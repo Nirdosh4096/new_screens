@@ -306,9 +306,6 @@ header .nav-bar .logout span {
     border-radius: 50%;
 }
 
-.completed-consultations button .right .icon .material-symbols-outlined {
-    
-}
 
 .completed-consultations button  .none-text {
     color: var(--color-grey-2);
@@ -553,7 +550,7 @@ header .nav-bar .logout span {
     border-radius: var(--border-radius-5);
     font-family: var(--ff);
     background: var(--color-white);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.1);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
 }
 
 
@@ -615,7 +612,7 @@ header .nav-bar .logout span {
     color: var(--color-white);
     background: var(--color-secondary);
     border-radius: var(--border-radius-4);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
 }
 
 .meeting-modal .meeting-info .meeting-link {
@@ -664,7 +661,7 @@ header .nav-bar .logout span {
     background: var(--color-white);
     font-size: var(--fs-15);
     font-family: var(--ff);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.1)
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
 }
 
 
@@ -688,7 +685,7 @@ header .nav-bar .logout span {
 
 .modal-container .modal .confirm-meeting .btn-container button {
     padding: var(--btn-padding);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
     border: 1px solid var(--color-secondary);
     font-size: var(--fs-15);
     font-family: var(--ff);
@@ -727,7 +724,7 @@ header .nav-bar .logout span {
 }
 
 .modal-container .modal .complete-your-guidance .btn-container button {
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
     border-radius: var(--border-radius-4);
     padding: var(--btn-padding);
     font: var(--fs-15) var(--fw-6) var(--ff);
@@ -836,7 +833,7 @@ header .nav-bar .logout span {
     color: var(--color-white);
     border: none;
     outline: none;
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
     border-radius: var(--border-radius-4);
     padding: var(--btn-padding);
     cursor: pointer;
@@ -865,7 +862,7 @@ header .nav-bar .logout span {
     padding: var(--btn-padding);
     font-size: var(--fs-16);
     border-radius: var(--border-radius-4);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
 }
 
 /* starting the consultation full screen modal */
@@ -1330,7 +1327,7 @@ header .nav-bar .logout span {
     background: var(--color-white);
     border: 1px solid var(--color-secondary);
     border-radius: var(--border-radius-4);
-    box-shadow: 3px 6px 10px rgba(136, 171, 41, 0.25);
+    box-shadow: 3px 6px 10px rgba(186, 186, 186, 0.1);
 }
 
 
@@ -1398,6 +1395,7 @@ header .nav-bar .logout span {
 
     header .nav-bar {
         padding: 1.5rem 3.625rem 1.375rem 3.625rem;
+        background: rgba(132, 156, 66, 0.2);
         display: flex;
         justify-content: space-between;
         align-items: center;
