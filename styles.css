@@ -101,9 +101,14 @@ header .nav-bar .logout span {
 }
 
 
-.information .patient-card {
+.scheduled-consultation .patient-card {
     display: grid;
     grid-template-columns: 29.06% 70%;
+}
+
+.pending-consultation .patient-card {
+    display: grid;
+    grid-template-columns: 29.7% 70%;
 }
 
 
@@ -183,7 +188,7 @@ header .nav-bar .logout span {
 }
 
 .pending-consultation .patient-card .patient-details {
-    padding: 0.6875rem 1.3125rem 1.4375rem 0.6875rem; 
+    padding: 0.6875rem 1.3125rem 0.625rem 0.6875rem; 
     font: var(--fs-16) var(--ff);
     display: grid;
     border-left: var(--border-card);
@@ -1343,7 +1348,7 @@ header .nav-bar .logout span {
     /* Information */
 
     .information .patient-card {
-        grid-template-columns: 27% 73%;
+        grid-template-columns: 30% 70%;
     }
 
     .scheduled-consultation .patient-card .date-time {
@@ -1356,10 +1361,18 @@ header .nav-bar .logout span {
     }
 
     .pending-consultation .patient-card .date-time {
-        padding: 0.625rem 1rem 1.9rem 1rem;
+        padding: 0.625rem 1rem 0.625rem 1rem;
     }
 
     .scheduled-consultation .patient-card .patient-details .patient {
+        font-size: var(--fs-15);
+    }
+
+    .pending-consultation .patient-card .patient-details {
+        padding-right: 0.687rem;
+    }
+
+    .pending-consultation .patient-card .patient-details .cta-placement {
         font-size: var(--fs-15);
     }
 
@@ -1506,9 +1519,6 @@ header .nav-bar .logout span {
 
     .pending-consultation .patient-card .patient-details {
         padding-top: 2rem;
-        grid-template-columns: 2fr 3fr 1fr;
-        column-gap: 0.5rem;
-        grid-template-rows: 1fr;
     }
 
 
@@ -1798,11 +1808,11 @@ header .nav-bar .logout span {
     }
 
     .information .patient-card {
-        grid-template-columns: 1.5fr 8fr;
+        grid-template-columns: 1.4fr 8fr;
     }
 
     .information .patient-card .date-time {
-        padding: 1.625rem;
+        padding: 1.625rem 1.3125rem;
     }
     
     .information .patient-card .date-time .day-time {
@@ -1813,12 +1823,16 @@ header .nav-bar .logout span {
         grid-template-columns: 3.5fr 4fr 2.5fr 3fr;
     }
 
+    .pending-consultation .patient-card .patient-details {
+        grid-template-columns: repeat(3, 4fr);
+    }
+
     .scheduled-consultation .patient-card .patient-details .disorder {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
 
-    .scheduled-consultation .patient-card .patient-details .disorder h5 {
+    .information .patient-card .patient-details .disorder h5 {
         display: none;
     }
 
@@ -1837,13 +1851,28 @@ header .nav-bar .logout span {
         grid-column: 1 / 2;
     }
     
-    .scheduled-consultation .patient-card .patient-details .patient .age,
-    .scheduled-consultation .patient-card .patient-details .patient .gender {
+    .information .patient-card .patient-details .patient .age,
+    .information .patient-card .patient-details .patient .gender {
         display: none;
     }
 
-    .scheduled-consultation .patient-card .patient-details .patient .age-gender {
+    .information .patient-card .patient-details .patient .age-gender {
         display: block;
+    }
+
+    .pending-consultation .patient-card .patient-details .patient {
+        grid-row: 1 / 2;
+    }
+
+
+    .pending-consultation .patient-card .patient-details .disorder {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .pending-consultation .patient-card .patient-details .cta-placement {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
     }
 
     .completed-consultations .dropdown-container li {
@@ -1882,6 +1911,15 @@ header .nav-bar .logout span {
     .information .patient-card .patient-details {
         padding-top: 1.5rem;
     }
+
+    .pending-consultation .patient-card .patient-details {
+        padding: 2.8125rem 1.5rem 2.4375rem 2.8125rem;
+    }
+
+    .pending-consultation .patient-card .patient-details .cta-placement {
+        justify-content: center;
+    }
+
     .parent .field .back-btn {
         padding: 1.5rem 4.0625rem;
     }
