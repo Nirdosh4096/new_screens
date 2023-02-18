@@ -1904,6 +1904,7 @@ header .nav-bar .logout span {
         top: 5.8rem;
         height: 82vh;
         width: 100%;
+        padding-bottom: 1rem;
     }
     .information .patient-card .patient-details {
         padding-top: 1.5rem;
